@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h2>Weather</h2>
+        <div class="row">
+            <input type="text" id="locationInput" placeholder="Enter a city">
+            <button id="searchBtn"><i class="ri-search-2-line"></i></button>
+        </div>
+        <div class="error">
+            <p>invalid city name</p>
+        </div>
+        <div class="weather-info">
+            <div class="wicon"></div>
+            <h1 class="temp"></h1>
+            <h2 class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <i class="ri-water-percent-line"></i>
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <i class="ri-windy-line"></i>
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+            <p id="description"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
